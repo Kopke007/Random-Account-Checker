@@ -24,11 +24,11 @@ def check_tokens_from_file(filename):
             for token in tokens:
                 token = token.strip()  
                 if check_token(token):
-                    print(f'{token} is valid.')
+                    print(f'{token} IS VALID!')
                     with open("Tokens.txt", "a") as Tokens:
                         Tokens.write(f'{token}\n')
                 else:
-                    print(f'{token} is not valid.')
+                    print(f"{token} is not valid")
 
     except FileNotFoundError:
         print(f"{filename} can not finded.")
